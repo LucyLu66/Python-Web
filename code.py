@@ -1,4 +1,4 @@
-import webbrowser
+import web
 urls = (
     '/', 'index'
 )
@@ -8,5 +8,5 @@ class index:
         return 'Hello World!'
 
 if __name__ == '__main__':
-    app = webbrowser.application(urls, globals())
+    app = web.application(urls, globals())
     app.run()
